@@ -23,3 +23,8 @@
 **https://github.com/pAyDaAr/Iranian_Bot**
 
 ![testtt](http://s3.picofile.com/file/8221048884/%D9%8264%D8%BA.png)
+
+مرحلهـ چهار
+============
+
+![testrtt](http://s3.picofile.com/file/8221049842/%DB%8C%D9%84%D9%84%DB%8C%D9%84%DB%8C%D9%846.png)
