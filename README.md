@@ -8,5 +8,5 @@
 
 **https://github.com/new**
 
-![test](http://s3.picofile.com/file/8221045300/%D9%81356%D8%A7%D8%A8%D8%BA%D8%A7.png)
-**اسم فایل و گزینه سبز رنگ رو میزنید**
+![testt](http://s3.picofile.com/file/8221045300/%D9%81356%D8%A7%D8%A8%D8%BA%D8%A7.png)
+![testt](http://s3.picofile.com/file/8221046976/%D8%A8%D8%A8%D8%A8%DB%8C%D8%AB6.png)
