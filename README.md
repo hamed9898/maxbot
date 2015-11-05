@@ -118,4 +118,4 @@ cd Iranian_Bot
 
 تماس با ما
 ================
-[AmIr_PayDaAr](telegram.me/Amir_paydaar)
+[AmIr_PayDaAr](https://telegram.me/Amir_paydaar)
