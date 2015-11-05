@@ -122,6 +122,6 @@ cd Iranian_Bot
 
 and my friend [hacker13v](https://telegram.me/hacker13v)
 
-[**Support With Group**](https://telegram.me/joinchat/CZYDXQLnHzDdmutJzmTwpg)
+[**Support With Group**](https://telegram.me/joinchat/CZYDXQLnHzBfZZOsiAUHcA)
 
-**https://telegram.me/joinchat/CZYDXQLnHzDdmutJzmTwpg**
+**https://telegram.me/joinchat/CZYDXQLnHzBfZZOsiAUHcA**
