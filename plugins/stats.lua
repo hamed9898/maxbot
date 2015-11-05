@@ -1,7 +1,7 @@
 do
 
-local NUM_MSG_MAX = 25
-local TIME_CHECK = 10 -- seconds
+local NUM_MSG_MAX = 6
+local TIME_CHECK = 4 -- seconds
 
 
 
@@ -30,7 +30,7 @@ local uhash = 'user:'..user_id
 local user = redis:hgetall(uhash)
 local um_hash = 'msgs:'..user_id..':'..chat_id
 user_info.msgs = tonumber(redis:get(um_hash) or 0)
-user_info.name = user_print_name(user)..' ('..user_id..')'
+user_info.name = user_print_name(user)..'👤|'..user_id..'|🗣'
 return user_info
 end
 
@@ -56,7 +56,7 @@ end)
 
 local text = ''
 for k,user in pairs(users_info) do
-text = text..user.name..' => '..user.msgs..'\n'
+text = text..user.name..' => '..user.msgs..'\n-----------'
 end
 
 return text
@@ -97,25 +97,20 @@ local hash = 'msgs:'..msg.from.id..':'..msg.to.id
 redis:incr(hash)
 
 -- Check flood
+
 local kick = chat_del_user(chat_id , user_id, ok_cb, true)
 vardump(kick)
-end
-
 
 if msg.from.type == 'user' then
 local hash = 'user:'..msg.from.id..':msgs'
 local msgs = tonumber(redis:get(hash) or 0)
 if msgs > NUM_MSG_MAX then
 
-
-
-local hash = 'banned:'..msg.to.id..':'..msg.from.id
-redis:set(hash, true)
-
 chat_del_user('chat#id'..msg.to.id,'user#id'..msg.from.id,ok_cb,false)
 
 
-end
+
+
 print('User '..msg.from.id..'is flooding '..msgs)
 msg = nil
 end
