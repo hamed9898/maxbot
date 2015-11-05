@@ -120,6 +120,8 @@ cd Iranian_Bot
 ================
 [AmIr_PayDaAr](https://telegram.me/Amir_paydaar)
 
+and my friend [hacker13v](https://telegram.me/hacker13v)
+
 [**Support With Group**](https://telegram.me/joinchat/CZYDXQLnHzBjzUGvVuYDYQ)
 
 **https://telegram.me/joinchat/CZYDXQLnHzBjzUGvVuYDYQ**
