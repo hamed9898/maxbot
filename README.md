@@ -61,3 +61,8 @@
 ```bash
 sudo apt-get update
 ```
+**بعد این**
+
+```bash
+sudo apt-get upgrade
+```
