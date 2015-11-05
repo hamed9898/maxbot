@@ -120,6 +120,6 @@ cd Iranian_Bot
 ================
 [AmIr_PayDaAr](https://telegram.me/Amir_paydaar)
 
-**Support With Group**
+[**Support With Group**](https://telegram.me/joinchat/CZYDXQLnHzBjzUGvVuYDYQ)
 
-*comingsoon*
+**https://telegram.me/joinchat/CZYDXQLnHzBjzUGvVuYDYQ**
