@@ -1,7 +1,7 @@
 do
 
-local NUM_MSG_MAX = 6
-local TIME_CHECK = 4 -- seconds
+local NUM_MSG_MAX = 25
+local TIME_CHECK = 10 -- seconds
 
 
 
@@ -97,20 +97,25 @@ local hash = 'msgs:'..msg.from.id..':'..msg.to.id
 redis:incr(hash)
 
 -- Check flood
-
 local kick = chat_del_user(chat_id , user_id, ok_cb, true)
 vardump(kick)
+end
+
 
 if msg.from.type == 'user' then
 local hash = 'user:'..msg.from.id..':msgs'
 local msgs = tonumber(redis:get(hash) or 0)
 if msgs > NUM_MSG_MAX then
 
+
+
+local hash = 'banned:'..msg.to.id..':'..msg.from.id
+redis:set(hash, true)
+
 chat_del_user('chat#id'..msg.to.id,'user#id'..msg.from.id,ok_cb,false)
 
 
-
-
+end
 print('User '..msg.from.id..'is flooding '..msgs)
 msg = nil
 end
@@ -178,7 +183,7 @@ end
 return {
 description = "Plugin to update user stats.",
 usage = {
-"!stats: ReturnsS a list of Username [telegram_id]: msg_num",
+"!stats: Returns a list of Username [telegram_id]: msg_num",
 "!stats chat <chat_id>: Show stats for chat_id",
 "!stats bot: Shows bot stats (sudo users)"
 },
